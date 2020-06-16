@@ -1,19 +1,29 @@
 import React from "react"
 import TrackList from "../TrackList/TrackList"
-
+import "./Track.css";
 
 
 
 class Track extends React.Component{
 
+    renderAction(){
+            if (isRemoval){
+                return <button className="Track-action"> - </button>
+            }else{
+                return <button className="Track-action" > + </button>
+            }
+    }
+
         render(){
             
 
             return(
-                <div class="Playlist">
-                <input value="New Playlist"/>
-                    <TrackList />
-                <button class="Playlist-save">SAVE TO SPOTIFY</button>
+                <div className="Track">
+                <div className="Track-information">
+                  <h3>{this.props.track.name}</h3>
+                  <p>`${this.props.track.artist} | ${this.props.track.album}`</p>
+                </div>
+                    {this.renderAction()}
               </div>
             );
 
