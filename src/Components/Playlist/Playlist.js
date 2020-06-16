@@ -4,7 +4,7 @@ import TrackList from "../TrackList/TrackList"
 
 
 
-class Track extends React.Component{
+class Playlist extends React.Component{
 
         render(){
             
@@ -12,7 +12,7 @@ class Track extends React.Component{
             return(
                 <div class="Playlist">
                 <input value="New Playlist"/>
-                    <TrackList />
+                <TrackList />
                 <button class="Playlist-save">SAVE TO SPOTIFY</button>
               </div>
             );
@@ -21,4 +21,4 @@ class Track extends React.Component{
         }
 
 }
-export default Track ;
+export default Playlist ;
