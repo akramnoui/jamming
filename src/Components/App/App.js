@@ -34,12 +34,13 @@ class App extends React.Component {
       // userId: user.userId
       });
       Spotify.fetchuser().then(result =>{
-        alert(result.display_name)
         this.setState({
           userId: result.display_name ,
           imgurl: result.images[0].url
           
         })
+                alert(result.display_name)
+
       })
       
     
