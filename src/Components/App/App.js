@@ -15,7 +15,7 @@ class App extends React.Component {
       searchResults: [],
       playlistName: 'New Playlist',
       playlistTracks: [] , 
-      imgurl: 'profile' , 
+      imgurl: '' , 
       userId:'Login'
     };
 
