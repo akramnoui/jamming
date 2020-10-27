@@ -15,8 +15,8 @@ class App extends React.Component {
       searchResults: [],
       playlistName: 'New Playlist',
       playlistTracks: [] , 
-      imgurl: profile , 
-      userId:''
+      imgurl: 'profile' , 
+      userId:'Login'
     };
 
     this.search = this.search.bind(this);
@@ -24,6 +24,16 @@ class App extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
+  }  
+  componentDidMount(){
+    Spotify.fetchuser().then(result =>{
+      this.setState({
+        userId: result.display_name ,
+        imgurl: result.images[0].url
+        
+      })
+
+    })
   }
 
   search(term) {
@@ -33,15 +43,7 @@ class App extends React.Component {
       //  imgurl: user.imgurl,
       // userId: user.userId
       });
-      Spotify.fetchuser().then(result =>{
-        this.setState({
-          userId: result.display_name ,
-          imgurl: result.images[0].url
-          
-        })
-                alert(result.display_name)
-
-      })
+      
       
     
       
@@ -83,12 +85,14 @@ class App extends React.Component {
     return (
       <div>
       <header>
-      
-      <h1>Akram <span className="highlight">Spotify</span></h1>
+      <div className='MainHeader'>
       <img className="logo" src={require('./audio.png')} />
+
+      <h1 className="akramspotify">Akram <span className="highlight">Spotify</span></h1>
       <div className="flex-container">
         <h2 className="pname">{this.state.userId}</h2>
         <img className="pp" src={this.state.imgurl} />
+      </div>
       </div>
 
       

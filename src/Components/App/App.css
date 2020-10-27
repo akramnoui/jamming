@@ -48,28 +48,28 @@ h2 {
 .flex-container {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  right: 25px;
-  top: 8px;
   justify-content: center;
+  align-items: center;
+  transform: translateX(-1rem);
+  ;
+}
+.MainHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 .logo {
 
   height: 45px;
   width: 50px;
-  position: absolute;
-  left: 0px;
-  margin-top: 0px;
   background-color: #010c3f;
-  top: 8px;
-  margin-left: 30px;
- 
+  transform: translateX(2rem);
 
 }
 .pp{
-  height: 50px;
-  width: 50px;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
 
 
@@ -94,10 +94,33 @@ header {
   justify-content: space-between;
   width: 100%;
 }
+.akramspotify{
+  transform: translateX(3rem);
+  }
 
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+  .akramspotify{
+    font-size: 1.2rem;
+    transform: translateX(1.5rem);
+
+  }
+  .pname{
+    font-size: 1rem;
+
+  }
+  .pp{
+    height: 2rem;
+    width: 2rem;
+  }
+  .logo{
+    height: 2rem;
+    width: 2.3rem;
   }
 }
