@@ -50,7 +50,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transform: translateX(-1rem);
+  transform: translateX(-0.8rem);
   ;
 }
 .MainHeader{
@@ -112,12 +112,14 @@ header {
 
   }
   .pname{
-    font-size: 1rem;
+    font-size: 0.7rem;
+    margin-right: -0.4rem;
 
   }
   .pp{
     height: 2rem;
     width: 2rem;
+    margin-right: -0.5rem;
   }
   .logo{
     height: 2rem;
