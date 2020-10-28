@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jamming/static/css/main.0ff9772e.chunk.css",
+    "main.css": "/jamming/static/css/main.9b12ef07.chunk.css",
     "main.js": "/jamming/static/js/main.7fd46632.chunk.js",
     "main.js.map": "/jamming/static/js/main.7fd46632.chunk.js.map",
     "runtime-main.js": "/jamming/static/js/runtime-main.b4c91255.js",
@@ -8,9 +8,9 @@
     "static/js/2.51f7259a.chunk.js": "/jamming/static/js/2.51f7259a.chunk.js",
     "static/js/2.51f7259a.chunk.js.map": "/jamming/static/js/2.51f7259a.chunk.js.map",
     "index.html": "/jamming/index.html",
-    "precache-manifest.a7d5734dafe42b1ecc110b9fc1edcca6.js": "/jamming/precache-manifest.a7d5734dafe42b1ecc110b9fc1edcca6.js",
+    "precache-manifest.1bb70f1b50a3f64c70a951992050c447.js": "/jamming/precache-manifest.1bb70f1b50a3f64c70a951992050c447.js",
     "service-worker.js": "/jamming/service-worker.js",
-    "static/css/main.0ff9772e.chunk.css.map": "/jamming/static/css/main.0ff9772e.chunk.css.map",
+    "static/css/main.9b12ef07.chunk.css.map": "/jamming/static/css/main.9b12ef07.chunk.css.map",
     "static/js/2.51f7259a.chunk.js.LICENSE.txt": "/jamming/static/js/2.51f7259a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/jamming/static/media/background_photo_desktop.37be7357.jpg",
     "static/media/profile.png": "/jamming/static/media/profile.1b324c02.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4c91255.js",
     "static/js/2.51f7259a.chunk.js",
-    "static/css/main.0ff9772e.chunk.css",
+    "static/css/main.9b12ef07.chunk.css",
     "static/js/main.7fd46632.chunk.js"
   ]
 }
