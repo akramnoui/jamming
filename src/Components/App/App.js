@@ -5,7 +5,10 @@ import Playlist from '../Playlist/Playlist';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Spotify from '../../util/Spotify';
-import profile from './profile.png'
+import profile from './profile.png';
+import { Navbar } from 'react-bootstrap';
+
+
 
 class App extends React.Component {
 
@@ -15,7 +18,7 @@ class App extends React.Component {
       searchResults: [],
       playlistName: 'New Playlist',
       playlistTracks: [] , 
-      imgurl: '' , 
+      imgurl: profile , 
       userId:'Login'
     };
 
@@ -27,11 +30,23 @@ class App extends React.Component {
   }  
   componentDidMount(){
     Spotify.fetchuser().then(result =>{
+
+
+      if (result.images.length !== 0){
+    
       this.setState({
         userId: result.display_name ,
         imgurl: result.images[0].url
         
       })
+    }else{
+
+        this.setState({
+          userId: result.display_name ,
+          
+        })
+
+    }
 
     })
   }
@@ -85,10 +100,38 @@ class App extends React.Component {
     return (
       <div>
       <header>
-      <div className='MainHeader'>
-      <img className="logo" src={require('./audio.png')} />
+        <Navbar bg="red" expand="lg">
+            <Navbar.Brand href="#home">
+              <div className="LogoContainer">
+                <img className="logo" src={require('./audio.png')} />
 
-      <h1 className="akramspotify">Akram <span className="highlight">Spotify</span></h1>
+                <h1 className="akramspotify">Akram <span className="highlight">Spotify</span></h1>
+
+              </div>
+           
+              </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <nav class="navbar navbar-light" >
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                  </div>
+                </div>
+              </nav>
+              
+            </Navbar.Collapse>
+        </Navbar>
+    
+      <div className='MainHeader'>
+   
       <div className="flex-container">
         <h2 className="pname">{this.state.userId}</h2>
         <img className="pp" src={this.state.imgurl} />
