@@ -100,18 +100,10 @@ class App extends React.Component {
     return (
       <div>
       <header>
-        <Navbar bg="red" expand="lg">
+       {/* <Navbar class="navbar navbar-expand-lg navbar-light bg-light" bg="red" expand="sm">
             <Navbar.Brand href="#home">
-              <div className="LogoContainer">
-                <img className="logo" src={require('./audio.png')} />
-
-                <h1 className="akramspotify">Akram <span className="highlight">Spotify</span></h1>
-
-              </div>
-           
-              </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+             
+              <Navbar.Collapse id="basic-navbar-nav">
               <nav class="navbar navbar-light" >
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,15 +120,46 @@ class App extends React.Component {
               </nav>
               
             </Navbar.Collapse>
-        </Navbar>
+           
+              </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      
+        </Navbar> */}
+         <nav class="navbar navbar-expand-lg navbar-dark "  >
+           <div className='navbar-brand'>
+            <div className="LogoContainer">
+                    <img className="logo" src={require('./audio.png')} />
+
+                    <h1 className="akramspotify">Akram <span className="highlight">Spotify</span></h1>
+
+                  </div> 
+            </div>  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <div className='navbar-text'>
+              
+              <div className="flex-container">
+                <h2 className="pname">{this.state.userId}</h2>
+                <img className="pp" src={this.state.imgurl} />
+              </div>
+            </div> 
+          </div>
+        </nav>
     
-      <div className='MainHeader'>
-   
-      <div className="flex-container">
-        <h2 className="pname">{this.state.userId}</h2>
-        <img className="pp" src={this.state.imgurl} />
-      </div>
-      </div>
+
 
       
       </header>

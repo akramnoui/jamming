@@ -56,7 +56,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10rem;
+  margin-right: 20rem;
 }
 .MainHeader {
   display: flex;
@@ -97,6 +97,9 @@ header {
 .akramspotify {
   transform: translateY(0.5rem);
   margin-left: 2rem;
+}
+.color-nav{
+  background-color: #6c41ec;
 }
 
 @media only screen and (max-width: 1020px) {
