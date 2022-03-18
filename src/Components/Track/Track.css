@@ -1,9 +1,10 @@
 .Track {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
   border-bottom: 1px solid rgba(256, 256, 256, 0.8);
   margin-bottom: 2rem;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 
 .Track-action {
@@ -29,478 +30,40 @@
 }
 
 .Track-information h3 {
+  height: 8rem;
   margin-bottom: 0.22rem;
-}
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
+}
+.image-container{
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+.track-name{
+  width: 16rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .Track-information p {
   font-size: 0.83rem;
   font-weight: 300;
   color: rgba(256, 256, 256, 0.8);
 }
-#A_1 {
-  align-items: center;
-  block-size: 76.4px;
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  display: flex;
-  height: 76.4px;
-  inline-size: 548.8px;
-  margin-inline-end: -13.2px;
-  margin-inline-start: -13.2px;
-  padding-block-end: 13.2px;
-  padding-block-start: 13.2px;
-  padding-inline-end: 9.9px;
-  padding-inline-start: 9.9px;
-  perspective-origin: 274.4px 38.2px;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  transform-origin: 274.4px 38.2px;
-  width: 548.8px;
-  animation: 1s ease 0.382s 1 normal forwards running mic-drop;
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  margin: 0px -13.2px;
-  outline: rgb(80, 73, 109) none 0px;
-  padding: 13.2px 9.9px;
-}/*#A_1*/
-
-#A_1:after {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#A_1:after*/
-
-#A_1:before {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#A_1:before*/
-
-#SPAN_2 {
-  block-size: 15.7125px;
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  display: block;
-  height: 15.7125px;
-  inline-size: 12px;
-  margin-inline-end: 20px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: auto;
-  min-width: auto;
-  perspective-origin: 6px 7.85px;
-  text-align: right;
-  text-decoration: none solid rgb(171, 165, 195);
-  transform-origin: 6px 7.85625px;
-  width: 12px;
-  border: 0px none rgb(171, 165, 195);
-  flex: 0 1 12px;
-  font: 700 11.22px / 15.708px Rubik, sans-serif;
-  margin: 0px 20px 0px 0px;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_2*/
-
-#SPAN_2:after {
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  text-align: right;
-  text-decoration: none solid rgb(171, 165, 195);
-  border: 0px none rgb(171, 165, 195);
-  font: 700 11.22px / 15.708px Rubik, sans-serif;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_2:after*/
-
-#SPAN_2:before {
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  text-align: right;
-  text-decoration: none solid rgb(171, 165, 195);
-  border: 0px none rgb(171, 165, 195);
-  font: 700 11.22px / 15.708px Rubik, sans-serif;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_2:before*/
-
-#SPAN_3 {
-  align-items: center;
-  block-size: 50px;
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: flex;
-  height: 50px;
-  inline-size: 497px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: auto;
-  min-width: auto;
-  perspective-origin: 248.5px 25px;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  transform-origin: 248.5px 25px;
-  width: 497px;
-  border: 0px none rgb(80, 73, 109);
-  flex: 3 1 0%;
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_3*/
-
-#SPAN_3:after {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_3:after*/
-
-#SPAN_3:before {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_3:before*/
-
 #SPAN_4 {
-  background-position: 50% 50%;
-  block-size: 50px;
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-end-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  border-start-end-radius: 5px;
-  border-start-start-radius: 5px;
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  float: left;
-  height: 50px;
-  inline-size: 40px;
-  margin-inline-end: 13.2px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: 40px;
-  min-width: 40px;
-  perspective-origin: 20px 25px;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  transform-origin: 20px 25px;
-  width: 40px;
-  background: rgb(250, 250, 250) url("https://i.scdn.co/image/ab6761610000f1782f71b65ef483ed75a8b40437") no-repeat scroll 50% 50% / cover padding-box border-box;
-  border: 0px none rgb(80, 73, 109);
+
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem 1rem 0;
+
+
+ 
+  /* transform-origin: 20px 25px; */
+  background:
+    no-repeat scroll 50% 50% / cover;
   border-radius: 5px;
-  flex: 0 1 40px;
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  margin: 0px 13.2px 0px 0px;
-  outline: rgb(80, 73, 109) none 0px;
-  transition: opacity 0.1s linear 0s;
-}/*#SPAN_4*/
-
-#SPAN_4:after {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_4:after*/
-
-#SPAN_4:before {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_4:before*/
-
-#SPAN_5 {
-  block-size: 31.4px;
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: flex;
-  height: 31.4px;
-  inline-size: 443.8px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: auto;
-  min-width: auto;
-  perspective-origin: 221.9px 15.7px;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  transform-origin: 221.9px 15.7px;
-  width: 443.8px;
-  border: 0px none rgb(80, 73, 109);
-  flex: 1 1 0%;
-  flex-flow: column nowrap;
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_5*/
-
-#SPAN_5:after {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_5:after*/
-
-#SPAN_5:before {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_5:before*/
-
-#SPAN_6 {
-  block-size: 18.475px;
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  display: block;
-  height: 18.475px;
-  inline-size: 443.8px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: auto;
-  min-width: auto;
-  perspective-origin: 221.9px 9.2375px;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  transform-origin: 221.9px 9.2375px;
-  width: 443.8px;
-  border: 0px none rgb(80, 73, 109);
-  font: 700 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_6*/
-
-#SPAN_6:after {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 700 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_6:after*/
-
-#SPAN_6:before {
-  border-block-end-color: rgb(80, 73, 109);
-  border-block-start-color: rgb(80, 73, 109);
-  border-inline-end-color: rgb(80, 73, 109);
-  border-inline-start-color: rgb(80, 73, 109);
-  box-sizing: border-box;
-  caret-color: rgb(80, 73, 109);
-  color: rgb(80, 73, 109);
-  column-rule-color: rgb(80, 73, 109);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(80, 73, 109);
-  border: 0px none rgb(80, 73, 109);
-  font: 700 13.2px / 18.48px Rubik, sans-serif;
-  outline: rgb(80, 73, 109) none 0px;
-}/*#SPAN_6:before*/
-
-#SPAN_7 {
-  block-size: 12.925px;
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  display: block;
-  height: 12.925px;
-  inline-size: 443.8px;
-  min-block-size: auto;
-  min-height: auto;
-  min-inline-size: auto;
-  min-width: auto;
-  perspective-origin: 221.9px 6.4625px;
-  text-align: left;
-  text-decoration: none solid rgb(171, 165, 195);
-  text-transform: capitalize;
-  transform-origin: 221.9px 6.4625px;
-  width: 443.8px;
-  border: 0px none rgb(171, 165, 195);
-  font: 9.24px / 12.936px Rubik, sans-serif;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_7*/
-
-#SPAN_7:after {
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(171, 165, 195);
-  text-transform: capitalize;
-  border: 0px none rgb(171, 165, 195);
-  font: 9.24px / 12.936px Rubik, sans-serif;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_7:after*/
-
-#SPAN_7:before {
-  border-block-end-color: rgb(171, 165, 195);
-  border-block-start-color: rgb(171, 165, 195);
-  border-inline-end-color: rgb(171, 165, 195);
-  border-inline-start-color: rgb(171, 165, 195);
-  box-sizing: border-box;
-  caret-color: rgb(171, 165, 195);
-  color: rgb(171, 165, 195);
-  column-rule-color: rgb(171, 165, 195);
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none solid rgb(171, 165, 195);
-  text-transform: capitalize;
-  border: 0px none rgb(171, 165, 195);
-  font: 9.24px / 12.936px Rubik, sans-serif;
-  outline: rgb(171, 165, 195) none 0px;
-}/*#SPAN_7:before*/
-
+  /* margin: 0px 13.2px 0px 0px; */
+}

@@ -43,18 +43,22 @@ const Spotify = {
       },
     })
       .then((response) => {
+
         return response.json();
       })
       .then((jsonResponse) => {
         if (!jsonResponse.tracks) {
           return [];
         }
+        console.log( jsonResponse.tracks.items );
+
         return jsonResponse.tracks.items.map((track) => ({
           id: track.id,
           name: track.name,
           artist: track.artists[0].name,
           album: track.album.name,
           uri: track.uri,
+          image: track.album.images[2], 
           userId: userId,
         }));
       });
