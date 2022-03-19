@@ -2,11 +2,16 @@ import React from 'react';
 import './App.css';
 
 import Playlist from '../Playlist/Playlist';
+import LandingPage from '../LandingPage/LandingPage';
+
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
+import MainPage from '../MainPage/MainPage';
+
 import Spotify from '../../util/Spotify';
 import profile from './profile.png';
 import { Navbar } from 'react-bootstrap';
+
 
 
 
@@ -100,31 +105,6 @@ class App extends React.Component {
     return (
       <div>
       <header>
-       {/* <Navbar class="navbar navbar-expand-lg navbar-light bg-light" bg="red" expand="sm">
-            <Navbar.Brand href="#home">
-             
-              <Navbar.Collapse id="basic-navbar-nav">
-              <nav class="navbar navbar-light" >
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
-                  </div>
-                </div>
-              </nav>
-              
-            </Navbar.Collapse>
-           
-              </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      
-        </Navbar> */}
          <nav class="navbar navbar-expand-lg navbar-dark "  >
            <div className='navbar-brand'>
             <div className="LogoContainer">
